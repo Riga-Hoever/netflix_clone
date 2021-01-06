@@ -1,0 +1,43 @@
+.App{
+    text-align: center;
+}
+
+
+.logo{
+    position: fixed;
+    left:0;
+    padding:20px;
+    width:80px;
+    object-fit:contain;
+}
+
+.nav_avatar{
+    position: fixed;
+    right:20px;
+    width:30px;
+    object-fit:contain;
+}
+
+
+.Navbar{
+    position:fixed;
+    top:0;
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+    padding: 20px;
+    height:30px;
+    background-color: black;
+}
+
+
+.links{
+    width:50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style:none;
+    margin-left:270px;
+    padding-top:40px;
+    
+}
