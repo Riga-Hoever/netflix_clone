@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -18,12 +19,24 @@ function Navbar() {
       </div>
 
       <ul className="links">
-        <li>Home</li>
-        <li>Series</li>
-        <li>Films</li>
-        <li>Trending</li>
-        <li>My List</li>
-        <li>History</li>
+        <Link style={{ textDecoration:'none' }}>
+          <li>Home</li>
+        </Link>
+        <Link style={{ textDecoration:'none' }}>
+          <li>Series</li>
+        </Link>
+        <Link style={{ textDecoration:'none' }}>
+          <li>Films</li>
+        </Link>
+        <Link style={{ textDecoration:'none' }}>
+          <li>Trending</li>
+        </Link>
+        <Link style={{ textDecoration:'none' }}>
+          <li>My List</li>
+        </Link>
+        <Link style={{ textDecoration:'none' }}>
+          <li>History</li>
+        </Link>
       </ul>
     </div>
   );
