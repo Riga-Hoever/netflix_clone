@@ -19,22 +19,22 @@ function Navbar() {
       </div>
 
       <ul className="links">
-        <Link style={{ textDecoration:'none' }}>
+        <Link to = "/home"style={{ textDecoration:'none' }}>
           <li>Home</li>
         </Link>
-        <Link style={{ textDecoration:'none' }}>
+        <Link to = "/series"style={{ textDecoration:'none' }}>
           <li>Series</li>
         </Link>
-        <Link style={{ textDecoration:'none' }}>
+        <Link to = "/films" style={{ textDecoration:'none' }}>
           <li>Films</li>
         </Link>
-        <Link style={{ textDecoration:'none' }}>
+        <Link to = "/trending" style={{ textDecoration:'none' }}>
           <li>Trending</li>
         </Link>
-        <Link style={{ textDecoration:'none' }}>
+        <Link to = "/MyList"style={{ textDecoration:'none' }}>
           <li>My List</li>
         </Link>
-        <Link style={{ textDecoration:'none' }}>
+        <Link to = "/history" style={{ textDecoration:'none' }}>
           <li>History</li>
         </Link>
       </ul>

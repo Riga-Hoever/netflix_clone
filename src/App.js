@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { FooterContainer } from "./components/container/footer_c";
+
 import "./App.css";
 import Navbar from "./Navbar";
 import Home from "./Menu/Home";
@@ -15,12 +17,13 @@ function App() {
       <Switch>
         <div className="App">
           <Navbar />
-          <Route path="/home" exact component={Home} />
-          <Route path="/series" exact component={Series} />
-          <Route path="/Films" exact component={Films} />
-          <Route path="/Trending" exact component={Trending} />
-          <Route path="/MyList" exact component={MyList} />
-          <Route path="/History" exact component={History} />
+          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={Series} />
+          <Route path="/" exact component={Films} />
+          <Route path="/" exact component={Trending} />
+          <Route path="/" exact component={MyList} />
+          <Route path="/" exact component={History} />
+          <FooterContainer />
         </div>
       </Switch>
     </Router>
