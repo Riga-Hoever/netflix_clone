@@ -1,44 +1,59 @@
-.App{
-    text-align: center;
+* {
+  margin-top: 0px;
+}
+body {
+  background-color: black;
+  color: #757575;
 }
 
-
-.logo{
-    position: fixed;
-    left:0;
-    padding:20px;
-    width:80px;
-    object-fit:contain;
+.App {
+  text-align: center;
 }
 
-.nav_avatar{
-    position: fixed;
-    right:20px;
-    width:30px;
-    object-fit:contain;
+.logo {
+  position: fixed;
+  padding: 11px;
+  width: 80px;
+  object-fit: contain;
 }
 
-
-.Navbar{
-    position:fixed;
-    top:0;
-    display: flex;
-    justify-content:space-between;
-    width:100%;
-    padding: 20px;
-    height:30px;
-    background-color: black;
-    text-decoration: none;
+.nav_avatar {
+  position: fixed;
+  margin-right: 50px;
+  padding:10px;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
 }
 
+.links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-left: 350px;
+  padding-top: 40px;
+  padding: 20px;
+  height: 30px;
+  background-color: black;
+  position: fixed;
+  object-fit: contain;
+}
 
-.links{
-    width:50%;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    list-style:none;
-    margin-left:270px;
-    padding-top:40px;  
+a:link {
+  text-decoration: none !important;
+  
+}
+
+li {
     
+  color: #757575;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.links{
+    font-size: 18px;
+
 }
