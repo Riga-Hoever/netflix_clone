@@ -32,7 +32,7 @@ function App() {
       </Router>
       <Row title="NETFLIX ORIGINALS" />
       {/* plaats achter titel fetchUrl={request.fetchTrending} isLargeRow*/}
-      <Row title="Trending Now" />
+      <Row title="Trending Now" fetchUr={reques} />
       <Row title="TopRated" />
       <Row title="Action Movies" />
       <Row title="Comedy Movies" />
