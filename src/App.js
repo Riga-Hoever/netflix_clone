@@ -11,6 +11,8 @@ import MyList from "./Menu/MyList";
 import History from "./Menu/History";
 import Row from "./components/Rows/Row";
 import Banner from "./components/Banner/Banner";
+import requests from "./components/requests/requests";
+
 
 
 
@@ -30,14 +32,13 @@ function App() {
           <Route path="/" exact component={History} />
         </Switch>
       </Router>
-      <Row title="NETFLIX ORIGINALS" />
-      {/* plaats achter titel fetchUrl={request.fetchTrending} isLargeRow*/}
-      <Row title="Trending Now" fetchUr={reques} />
-      <Row title="TopRated" />
-      <Row title="Action Movies" />
-      <Row title="Comedy Movies" />
-      <Row title="Romance" />
-      <Row title="Documantaries" />
+      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchRomanceMovies} />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <Row title="TopRated" fetchUrl={requests.fetchTopRated} isLarger={true} />
+      <Row title="Action Movies" fetchUrl ={requests.fetchActionMovies} />,
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />,
+      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />,
+      <Row title="Documantaries" fetchUrl={requests.fetchDocumentaries} />,
       <FooterContainer />
     </div>
   );
