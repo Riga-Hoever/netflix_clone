@@ -29,6 +29,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-left:65px;
   max-width: 1000px;
   flex-direction: column;
   @media (max-width: 1000px) {
