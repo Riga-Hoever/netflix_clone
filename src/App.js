@@ -33,11 +33,11 @@ function App() {
         </Switch>
       </Router>
       <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-      <Row title="TopRated" fetchUrl={requests.fetchTopRated} isLarger={true} />
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending}  isLargeRow={true} />
+      <Row title="TopRated" fetchUrl={requests.fetchRomanceMovies} />,
       <Row title="Action Movies" fetchUrl ={requests.fetchActionMovies} />,
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />,
-      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />,
+      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} isLargeRow={true} />,
       <Row title="Documantaries" fetchUrl={requests.fetchDocumentaries} />,
       <FooterContainer />
     </div>
